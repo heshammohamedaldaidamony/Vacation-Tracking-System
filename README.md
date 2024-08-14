@@ -70,4 +70,12 @@ Our vision is to create a system that allows and empowers employees to effortles
 - **System Admin:** Responsible for the smooth running of the system’s technical resources (e.g., Web server, database) and for collecting and archiving all log files.
 
 ## 5.2 Manage Time Use Case
+### 5.2.1 Preconditions:
+The employee is authenticated by the portal framework and identified as an employee of the company with privileges to manage his or her 
+own vacation time.
+### 5.2.2 Flow Chart
+![Flow Chart](DOCs/Flow%20Chart%20-%20Manage%20Time.png)
+### 5.2.3 Sequence Diagram
+![Sequence Diagram](DOCs/Sequence%20Diagram%20-%20Manage%20Time.png)
+
 
