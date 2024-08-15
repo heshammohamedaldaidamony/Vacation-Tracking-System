@@ -77,5 +77,7 @@ own vacation time.
 ![Flow Chart](DOCs/Flow%20Chart%20-%20Manage%20Time.png)
 ### 5.2.3 Sequence Diagram
 ![Sequence Diagram](DOCs/Sequence%20Diagram%20-%20Manage%20Time.png)
+### 5.2.4 Data Model (ERD)
+![Data Model](DOCs/Data%20Model.png)
 
 
