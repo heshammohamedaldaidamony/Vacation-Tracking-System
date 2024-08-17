@@ -70,19 +70,25 @@ Our vision is to create a system that allows and empowers employees to effortles
 - **System Admin:** Responsible for the smooth running of the system’s technical resources (e.g., Web server, database) and for collecting and archiving all log files.
 
 ## 5.2 Manage Time Use Case
-### 5.2.1 Preconditions:
+### Preconditions:
 The employee is authenticated by the portal framework and identified as an employee of the company with privileges to manage his or her 
 own vacation time.
-### 5.2.2 Flow Chart
+### Flow Chart
 ![Flow Chart](DOCs/Flow%20Chart%20-%20Manage%20Time.png)
-### 5.2.3 Sequence Diagram
+### Sequence Diagram
 ![Sequence Diagram](DOCs/Sequence%20Diagram%20-%20Manage%20Time.png)
 
-### 5.2.3 Withdraw Pending Request
+### 5.2.1 Withdraw Pending Request
 ###  Preconditions:
 An employee has made a vacation time request, and that request has yet to be approved or denied by an authorized manager.
 ### Flow Chart & Sequence Diagram
 ![Flow Chart & Sequence Diagram](DOCs/Flow&Sequence%20Diagrams%20-%20Withdraw%20Request.png)
+
+### 5.2.2 Withdraw Pending Request
+###  Preconditions:
+The employee has a vacation time request that has been approved and is scheduled for some time in the future or the recent past (previous 5 business days).
+### Flow Chart & Sequence Diagram
+![Flow Chart & Sequence Diagram](DOCs/Flow&Sequence%20Diagrams%20-%20Cancel%20Request.png)
 
 ## 6. Data Model (ERD)
 ![Data Model](DOCs/Data%20Model.png)
