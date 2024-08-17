@@ -77,7 +77,14 @@ own vacation time.
 ![Flow Chart](DOCs/Flow%20Chart%20-%20Manage%20Time.png)
 ### 5.2.3 Sequence Diagram
 ![Sequence Diagram](DOCs/Sequence%20Diagram%20-%20Manage%20Time.png)
-### 5.2.4 Data Model (ERD)
+
+### 5.2.3 Withdraw Pending Request
+###  Preconditions:
+An employee has made a vacation time request, and that request has yet to be approved or denied by an authorized manager.
+### Flow Chart & Sequence Diagram
+![Flow Chart & Sequence Diagram](DOCs/Flow&Sequence%20Diagrams%20-%20Withdraw%20Request.png)
+
+## 6. Data Model (ERD)
 ![Data Model](DOCs/Data%20Model.png)
 
 
