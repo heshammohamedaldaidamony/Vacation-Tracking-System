@@ -56,14 +56,12 @@ Our vision is to create a system that allows and empowers employees to effortles
 ### Operational Constraints
 - Keeps activity logs for all transactions.
 
----
-
-# 5. Unified Modeling Language (UML) 📐
+## 5. Use Cases 
 
 ## 5.1 Use Case Diagram
 ![Use Case Diagram](DOCs/Use%20Case%20Diagram.png)
 
-### 5.1.1 Actors
+### Actors
 - **Employee:** The main user of this system, managing their vacation time.
 - **Manager:** An employee who has all the abilities and goals of a regular employee, but with the added responsibility of approving vacation requests for immediate subordinates. A manager may award subordinates comp time, subject to certain limits set in the system.
 - **Clerk (HR Member):** A member of the HR department who has sufficient rights to view employees’ personal data and is responsible for ensuring that employees’ information in all HR systems is up to date and correct. An HR clerk can add or remove nearly any record in the system. In real life, HR clerks may or may not be employees; however, if they are employees, they use two separate login IDs to manage these two different roles.
@@ -78,18 +76,18 @@ own vacation time.
 ### Sequence Diagram
 ![Sequence Diagram](DOCs/Sequence%20Diagram%20-%20Manage%20Time.png)
 
-### 5.2.1 Withdraw Pending Request
+## 5.3 Alternate Use Cases
+### 5.3.1 Withdraw Or edit Pending Request
 ###  Preconditions:
 An employee has made a vacation time request, and that request has yet to be approved or denied by an authorized manager.
 ### Flow Chart & Sequence Diagram
-![Flow Chart & Sequence Diagram](DOCs/Flow&Sequence%20Diagrams%20-%20Withdraw%20Request.png)
+![Flow Chart & Sequence Diagram](DOCs/Flow&Sequence%20Diagrams%20-%20Withraw&Edit%20Request.png)
 
-### 5.2.2 Withdraw Pending Request
+### 5.3.2 Cancel Approved Request
 ###  Preconditions:
 The employee has a vacation time request that has been approved and is scheduled for some time in the future or the recent past (previous 5 business days).
 ### Flow Chart & Sequence Diagram
 ![Flow Chart & Sequence Diagram](DOCs/Flow&Sequence%20Diagrams%20-%20Cancel%20Request.png)
-
 ## 6. Data Model (ERD)
 ![Data Model](DOCs/Data%20Model.png)
 
