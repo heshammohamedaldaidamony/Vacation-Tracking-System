@@ -1,0 +1,77 @@
+// Manage Time Use Case 
+
+
+
+
+// Create Request	 -----------------------------------------
+
+function createRequest(){
+	Request request = new Request(category,title,description,date);
+	if( validateRequest(request) ){
+		saveRequest(request);
+		notifyManager(request);
+	}
+	else
+		return errors;
+	
+}
+function validateRequest(request){
+	validateDate(request.date);
+	validateCategoryBalance(employeeId,request.category);
+}
+function validateCategoryBalance(employeeId,category,requestBalance){
+	employeeBalance = getEmployeeBalance(employeeId,category);
+	if(requestBalance > employeeBalance)
+		return false;
+	else 
+		return true;
+}
+
+
+
+
+// Withdraw Pending Request	----------------------------------
+
+function withdrawRequest(){
+	displayEmployeeRequests(employeeId);
+	if(isPending(selectedRequest)){
+		updateRequest(requestId,newStatus);
+		notifyManager(request);
+	}
+	else
+		return errors;
+}
+
+
+
+// Edit Pending Request	----------------------------------
+
+function EditRequest(){
+	displayEmployeeRequests(employeeId);
+	if(isPending(selectedRequest)){
+		updateRequest(requestId,newSatus,title,comments,date);
+		notifyManager(request);
+	}
+	else
+		return errors;
+}
+
+
+
+// Cancel Approved Request
+
+function cancelRequest(){
+	displayEmployeeRequests(employeeId);
+	if(isApproved(selectedRequest())){
+		if(isFutureRequest){
+			updateRequest(newStatus);
+		}
+		else if(isFiveBusinessDaysRequest()){
+			updateRequest(newStatus,explaination)
+		}
+		notifyManager(request);
+		updateEmployeeBalance(employeeId,requestBalance)
+	}
+	else
+		return errors;
+}
