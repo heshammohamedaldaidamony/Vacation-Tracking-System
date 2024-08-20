@@ -1,7 +1,23 @@
 # Vacation Tracking System (VTS) 
 
 *This project is based on an example from the book "Object-Oriented Analysis and Design with Applications, 3rd Edition", focusing on the business and system analysis aspects of the VTS.*
+## INDEX
+- [1. Vision](#1-vision-)
+- [2. Functional Requirements](#2-functional-requirements-%EF%B8%8F)
+- [3. Non-Functional Requirements](#3-non-functional-requirements-)
+- [4. Constraints](#4-constraints-)
+- [5. Use Cases](#5-use-cases)
+  - [5.1 Use Case Diagram](#51-use-case-diagram)
+  - [5.2 Manage Time Use Case](#52-manage-time-use-case)
+    - [5.2.1 Create Request](#521-create-request)
+    - [5.2.2 Withdraw Or Edit Pending Request](#522-withdraw-or-edit-pending-request)
+    - [5.2.3 Cancel Approved Request](#523-cancel-approved-request)
+- [6. Data Model (ERD)](#6-data-model-erd)
+- [7. Pseudocode](#7-pseudocode)
+- [8. State Machine Diagram For Request](#8-state-machine-diagram-for-request)
 
+
+      
 ## 1. Vision 🌟
 Our vision is to create a system that allows and empowers employees to effortlessly manage their vacation time without needing to master company policies. The system will automate the leave management process, ensuring efficiency, transparency, and ease of use for all stakeholders.
 
@@ -94,9 +110,11 @@ The employee has a vacation time request that has been approved and is scheduled
 ![Data Model](DOCs/Data%20Model.png)
 
 ## 7. Pseudocode
-You can also read the intuitional code for the provided use cases:
+- You can also read the intuitional code for the provided use cases:
 [Pseudocode](DOCs/VTS%20Pseudocode.txt)
 
+## 8. State Machine Diagram For Request
+![State Machine](DOCs/Request%20State%20Machine%20Diagrm.png)
 
 
 
